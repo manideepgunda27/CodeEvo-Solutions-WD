@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Conferencing App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Advanced Video Conferencing</h1>
+            <div class="controls">
+                <button id="startCall">Start Call</button>
+                <button id="endCall">End Call</button>
+                <button id="screenShare">Share Screen</button>
+            </div>
+        </header>
+
+        <div id="videoGrid">
+            <video id="myVideo" autoplay muted></video>
+        </div>
+
+        <div id="participants"></div>
+
+        <!-- Whiteboard -->
+        <canvas id="whiteboard"></canvas>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/webrtc.js"></script>
+</body>
+</html>
