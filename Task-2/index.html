@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Image Gallery -->
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="images/img1.jpg" alt="Image 1" class="gallery-img" loading="lazy">
+        </div>
+        <div class="gallery-item">
+            <img src="images/img2.jpg" alt="Image 2" class="gallery-img" loading="lazy">
+        </div>
+        <div class="gallery-item">
+            <img src="images/img3.jpg" alt="Image 3" class="gallery-img" loading="lazy">
+        </div>
+        <div class="gallery-item">
+            <img src="images/img4.jpg" alt="Image 4" class="gallery-img" loading="lazy">
+        </div>
+        <div class="gallery-item">
+            <img src="images/img5.jpg" alt="Image 5" class="gallery-img" loading="lazy">
+        </div>
+        <div class="gallery-item">
+            <img src="images/img6.jpg" alt="Image 6" class="gallery-img" loading="lazy">
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
