@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Weather Forecast</h1>
+            <div class="search-bar">
+                <input type="text" id="location-input" placeholder="Enter city name">
+                <button id="search-btn">Search</button>
+                <button id="geolocation-btn">Use my location</button>
+            </div>
+        </header>
+
+        <div id="weather-container">
+            <div id="current-weather" class="weather-section">
+                <h2>Current Weather</h2>
+                <div id="current-weather-details">
+                    <div class="temperature"></div>
+                    <div class="details"></div>
+                </div>
+            </div>
+
+            <div id="forecast-weather" class="weather-section">
+                <h2>5-Day Forecast</h2>
+                <canvas id="forecast-chart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
